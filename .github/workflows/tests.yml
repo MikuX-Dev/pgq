@@ -51,7 +51,7 @@ jobs:
       working-directory: integration
       run: go test -v
     - name: Code coverage
-      if: ${{ github.event_name != 'pull_request' && matrix.go == '1.24.x' }}
+      if: ${{ github.event_name != 'pull_request' && matrix.go == '1.25.x' }}
       uses: shogo82148/actions-goveralls@v1
       with:
         path-to-profile: profile.cov
