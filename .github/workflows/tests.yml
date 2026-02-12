@@ -46,7 +46,7 @@ jobs:
     - name: Run unit tests
       run: |
         go test -v -race -count 1 -covermode atomic -coverprofile=profile.cov ./...
-        sed -i '/^github\.com\/henvic\/httpretty\/example\//d' profile.cov
+        sed -i '/^github\.com\/MikuX-Dev\/httpretty\/example\//d' profile.cov
     - name: Run Postgres tests
       working-directory: integration
       run: go test -v
