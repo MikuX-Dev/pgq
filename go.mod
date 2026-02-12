@@ -1,3 +1,3 @@
-module github.com/henvic/pgq
+module github.com/MikuX-Dev/pgq
 
 go 1.24
